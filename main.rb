@@ -53,7 +53,6 @@ def analyze_files(files)
 
   files.each do |file|
     file_info = analyze_file(file)
-    puts file_info
 
     if points[file_info[:file_type].to_sym]
       points[file_info[:file_type].to_sym] +=  1
